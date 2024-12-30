@@ -1,0 +1,8 @@
+#!/bin/bash
+HOST="bandit.labs.overthewire.org"
+PORT=2220
+for i in {0..10}
+do
+echo "Connecting to level $i"
+ssh bandit$i@$HOST -p $PORT
+Done
